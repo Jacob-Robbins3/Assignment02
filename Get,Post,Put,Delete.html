@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+		<button id="create-new-list">Create new list</button>
+        <<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		</script>
+			var storage_URL='//Need URL';
+			
+			
+			document.querySelector('#create-new-list').addEventListener{'click',function()
+				{
+			axios.get('storeage_URL', {})
+  				.then(function (response) {
+    				console.log(response.data);
+  				})
+  				.catch(function (error) {
+    				console.log(error);
+  				}); 
+
+			
+			axios.post('https://jsonblob/api/jsonBlob/1342149190498836480', {
+			})
+  				.then(function (response) {
+    				console.log(response);
+				storeage_URL=response.headers.location;
+  				})
+  				.catch(function (error) {
+    				console.log(error);
+  				});
+
+
+			axios.put('https://jsonblob/api/jsonBlob/1342149190498836480', {
+				weather:'Cold',
+				strategy:'Stay at home!',
+			})
+  				.then(function (response) {
+    				console.log(response);
+  				})
+  				.catch(function (error) {
+    				console.log(error);
+  				});
+
+
+			axios.delete('https://jsonblob/api/jsonBlob/1342149190498836480', {})
+  				.then(function (response) {
+    				console.log(response);
+  				})
+  				.catch(function (error) {
+    				console.log(error);
+  				});		
+		</script>
+    </body>
+</html>
